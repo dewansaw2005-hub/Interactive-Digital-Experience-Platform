@@ -172,7 +172,7 @@ const messages = {
 
         label: "A LITTLE LETTER",
 
-        title: "Maddu 🌷",
+        title: "A Little Letter 🌷",
 
         message:
             "Happy birthday to one of the sweetest people I'm so grateful to have met!🥹💗\nI just want you to know that you truly matter, more than you probably realize. You're such a pretty, intelligent & incredibly strong person, and I genuinely appreciate having you in my life. I hope everything you're going through gets better and that life becomes kinder to you. No matter what happens, please remember that you're never alone. We're all here for you, for anything and everything. You've made it through so much already and I'm so proud of how strong you are. I hope you achieve everything you dream of and become successful in everything you choose to do. You deserve so many beautiful things in life. And until the day we finally get to meet in person, hang on, okay? One day we'll look back at all these online conversations and laugh about how long it took us to finally meet. I'm genuinely so grateful for you. Please keep going, keep smiling, and never forget how loved and appreciated you are. Again, Happy birthday Cacuu!!! Laviyooo mmmmmmmmwahhhh😚",
@@ -187,7 +187,7 @@ const messages = {
 
         label: "A TINY NOTE",
 
-        title: "Lithu 🌸",
+        title: "A Tiny Note 🌸",
 
         message:
             "Happy Birthday, My Best Friend! 🎂🤍✨\nඅපි කවදාවත් ඇස් දෙකට දැකලා නැති වුණත්, මගේ ජීවිතේ මට හම්බවුණු හොඳම මිනිස්සු අතරින් ඔයාට තියෙන්නේ හරිම විශේෂ තැනක්. 🥹❤️ දුර කියන්නේ කිලෝමීටර් ගාණක් විතරයි කියලා මට හිතෙන්නේ ඔයා නිසා.\nමගේ සතුටේදී වගේම මගේ අමාරුම දවස්වලත් මාව අහගෙන, මට හිනා වෙන්න හේතුවක් වෙලා, මගේ හොඳම යාළුවා වෙලා හිටියට ගොඩක් ස්තූතියි. 🫂💗\nකවදාහරි දවසක අපි ඇත්තටම හම්බවෙලා, \"අපි මෙච්චර කාලයක් මෙහෙම යාළුවෙලා හිටියද?\" කියලා හිනා වෙන්න පුළුවන් වෙයි කියලා මම හිතනවා. 🥺🤍\nඔයාගේ ජීවිතේ හැම හීනයක්ම හැබෑ වෙන්න, හැමදාම සතුටින් ඉන්න, හිතට නිදහසක් තියෙන ලස්සන ජීවිතයක් ලැබෙන්න මම හදවතින්ම ප්‍රාර්ථනා කරනවා. 🎂✨\nHappy Birthday to the person I've never met, but somehow became one of the closest people to my heart. ❤️‍🩹🫶🏻\nදුර කොච්චර තිබුණත්… ඔයා මගේ හොඳම යාළුවා. 🤍♾️",
@@ -202,7 +202,7 @@ const messages = {
 
         label: "FROM FAR AWAY",
 
-        title: "Dewa Akki 🌺",
+        title: "From Far Away 🌺",
 
         message:
             "සුබ හෙලුකුට්ටන් දිනයක් වේවා ලොකූ 🥳🥳🎊🎊🎉💕💕❤️✨\nපුංචි පෞලෙ වයසින් පොඩි, හැබැයි අනිත් ඒවගෙන් ලොකු එකීට දැන් 18 කුත් වෙලා 🥹🥹\nමගේ ජීවිතේ හම්බුනු වටිනම කෙනෙක් තමා ඔයා ලොකූ....ඔයා නිසා මන් ජීවිතේ මොන තරම් දේවල් වෙන්න පුලුවන්ද කියලා ඉගෙන ගත්තා, කෙනෙක් ව අහන් ඉන්න එක ඇත්තටම නරකම නෑ කියලා ඉගෙන ගත්තා, ඒ වගේම මට මගෙම නන්ගියෙක් හම්බුනා කියලා දැණුනා 🫂❤️‍🩹\nඔයාගෙ මේ ලස්සන දවසෙන් පස්සෙ ඔයා තියන හැම පියවරක්ම, ගන්න හැම තීරණයක්ම වගේම හම්බෙන හැම කෙනෙක්ම හොද වෙන්න කියලා මන් මගෙ මුලු හදවතින්ම ප්‍රාර්ථනා කරනවා ❤️✨️\nඔයා ඒ ගන්න හැම පියවරකදිම ඒකෙ හොද නරක තේරුම් කරලා දෙන්න, එකකුස නූපන් අක්කා කෙනෙක් ඉන්න වග අමතක කරන්නෙපා 🤗🫂❤️✨️\nආයෙමත්, ඔයාට සුබම සුබ උපන්දිනයක් වේවා මගෙ නන්ගි! මන්, අපේ පුංචි පවුල, ඔයාට ආදරෙයි ❤️❤️❤️❤️",
@@ -220,15 +220,10 @@ const messages = {
         title: "පුංචි පවුල 💌",
 
         message:
-            "We might just be a bunch of texts, calls, and late-night voice notes… but we're still your family. 🫂💗
-Always. No matter the distance, no matter the time zones.
-You're not just someone we talk to online. You're ours.❤️
-So today, and every day after — happy birthday, and welcome home. 🏡✨
-
-~ your පුංචි පවුල, always here for you ♡",
+            "We might just be a bunch of texts, calls, and late-night voice notes… but we're still your family. 🫂💗\nAlways. No matter the distance, no matter the time zones.\nYou're not just someone we talk to online. You're ours.\nSo today, and every day after — happy birthday, and welcome home. 🏡✨"
 
         signature:
-            "— Your bestie ♡"
+            "— පුංචි පවුල ♡"
 
     }
 
