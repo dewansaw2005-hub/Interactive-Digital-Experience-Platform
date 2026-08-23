@@ -1,34 +1,422 @@
-<!-- Magical Fantasy Background -->
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="fantasy-bg">
+<head>
 
-    <!-- Moon -->
-    <div class="moon">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A Little Something ✨</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         MAGICAL BACKGROUND
+    ========================================== -->
+
+    <div class="fantasy-background">
+
+        <div class="moon"></div>
+
         <div class="moon-glow"></div>
+
+        <div
+            class="stars"
+            id="stars">
+        </div>
+
+        <div
+            class="sparkles"
+            id="sparkles">
+        </div>
+
+        <div class="mist mist-one"></div>
+
+        <div class="mist mist-two"></div>
+
+        <div class="mist mist-three"></div>
+
+        <div class="garden garden-left">
+            🌿 🌸 🌿
+        </div>
+
+        <div class="garden garden-right">
+            🌿 🌷 🌿
+        </div>
+
     </div>
 
-    <!-- Stars -->
-    <div class="stars" id="stars"></div>
 
-    <!-- Floating sparkles -->
-    <div class="sparkles" id="sparkles"></div>
+    <!-- =========================================
+         WELCOME SCREEN
+    ========================================== -->
 
-    <!-- Mist -->
-    <div class="mist mist-one"></div>
-    <div class="mist mist-two"></div>
-    <div class="mist mist-three"></div>
+    <section
+        class="welcome-screen"
+        id="welcomeScreen">
 
-    <!-- Magical flowers -->
-    <div class="flowers flowers-left">
-        ✿ ❀ ✿
+        <div class="welcome-card">
+
+            <div class="tiny-stars">
+                ✦　✧　✦
+            </div>
+
+            <p class="small-heading">
+                SOMEONE LEFT SOMETHING HERE FOR YOU
+            </p>
+
+            <h1>
+                A Little<br>
+                Something ✨
+            </h1>
+
+            <p class="welcome-text">
+                It isn't much.
+                <br>
+                Just a tiny corner of the internet,
+                made with a little love.
+            </p>
+
+            <button
+                class="enter-button"
+                id="enterButton">
+
+                Enter the little world
+
+                <span>✦</span>
+
+            </button>
+
+            <p class="hint">
+                best opened with curiosity ♡
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main
+        class="main-content"
+        id="mainContent">
+
+
+        <!-- =====================================
+             HEADER
+        ====================================== -->
+
+        <header class="hero">
+
+            <div class="hero-decoration">
+                ✦　🌙　✦
+            </div>
+
+            <p class="eyebrow">
+                A LITTLE CORNER OF THE INTERNET
+            </p>
+
+            <h1>
+                Made Just For You
+            </h1>
+
+            <p class="hero-description">
+                Four little letters from four people
+                who wanted to leave something behind.
+            </p>
+
+            <div class="divider">
+                <span>✦</span>
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             LETTERS
+        ====================================== -->
+
+        <section class="letters-section">
+
+            <p class="section-label">
+                OPEN WHEN YOU'RE READY
+            </p>
+
+            <div class="letters-grid">
+
+
+                <!-- LETTER 1 -->
+
+                <button
+                    class="letter"
+                    data-letter="library">
+
+                    <div class="letter-glow"></div>
+
+                    <div class="letter-icon">
+                        📖
+                    </div>
+
+                    <span class="letter-number">
+                        I
+                    </span>
+
+                    <h2>
+                        A Little Letter
+                    </h2>
+
+                    <p>
+                        From someone who knows you
+                    </p>
+
+                    <span class="open-text">
+                        Open ✦
+                    </span>
+
+                </button>
+
+
+                <!-- LETTER 2 -->
+
+                <button
+                    class="letter"
+                    data-letter="cinema">
+
+                    <div class="letter-glow"></div>
+
+                    <div class="letter-icon">
+                        🎀
+                    </div>
+
+                    <span class="letter-number">
+                        II
+                    </span>
+
+                    <h2>
+                        A Tiny Note
+                    </h2>
+
+                    <p>
+                        Something they wanted to say
+                    </p>
+
+                    <span class="open-text">
+                        Open ✦
+                    </span>
+
+                </button>
+
+
+                <!-- LETTER 3 -->
+
+                <button
+                    class="letter"
+                    data-letter="post">
+
+                    <div class="letter-glow"></div>
+
+                    <div class="letter-icon">
+                        🌷
+                    </div>
+
+                    <span class="letter-number">
+                        III
+                    </span>
+
+                    <h2>
+                        From Far Away
+                    </h2>
+
+                    <p>
+                        A little message across the distance
+                    </p>
+
+                    <span class="open-text">
+                        Open ✦
+                    </span>
+
+                </button>
+
+
+                <!-- LETTER 4 -->
+
+                <button
+                    class="letter special-letter"
+                    data-letter="home">
+
+                    <div class="letter-glow"></div>
+
+                    <div class="letter-icon">
+                        💌
+                    </div>
+
+                    <span class="letter-number">
+                        IV
+                    </span>
+
+                    <h2>
+                        One Last Thing
+                    </h2>
+
+                    <p>
+                        This one is a little more special
+                    </p>
+
+                    <span class="open-text">
+                        Open ✦
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BOTTOM MESSAGE
+        ====================================== -->
+
+        <section class="bottom-message">
+
+            <div class="bottom-line"></div>
+
+            <p>
+                Distance makes things complicated.
+                <br>
+                But apparently, it doesn't stop us from
+                making tiny corners of the internet. ♡
+            </p>
+
+            <div class="bottom-stars">
+                ✦　✧　✦
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            made with questionable amounts of sleep
+            and a lot of love ♡
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- =========================================
+         LETTER MODAL
+    ========================================== -->
+
+    <div
+        class="letter-overlay"
+        id="letterOverlay">
+
+        <div class="letter-paper">
+
+
+            <button
+                class="close-button"
+                id="closeButton"
+                aria-label="Close letter">
+
+                ×
+
+            </button>
+
+
+            <div class="paper-decoration">
+                ✦
+            </div>
+
+
+            <p
+                class="paper-label"
+                id="paperLabel">
+
+                A LITTLE LETTER
+
+            </p>
+
+
+            <h2
+                id="paperTitle">
+
+                For You ♡
+
+            </h2>
+
+
+            <div
+                class="paper-divider">
+
+                ❦
+
+            </div>
+
+
+            <div
+                class="paper-message"
+                id="paperMessage">
+            </div>
+
+
+            <p
+                class="paper-signature"
+                id="paperSignature">
+            </p>
+
+
+            <div class="paper-bottom">
+                ✦
+            </div>
+
+
+        </div>
+
     </div>
 
-    <div class="flowers flowers-right">
-        ❀ ✿ ❀
-    </div>
 
-    <!-- Vines -->
-    <div class="vine vine-left">🌿</div>
-    <div class="vine vine-right">🌿</div>
+    <!-- JavaScript -->
 
-</div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
