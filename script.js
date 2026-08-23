@@ -1,132 +1,374 @@
 /* =====================================================
-   BUTTERFLIES
+   GARDEN ANIMATIONS
 ===================================================== */
 
 const butterflyContainer =
     document.getElementById("butterflies");
 
+const petalContainer =
+    document.getElementById("petals");
 
-const butterflySymbols = [
-    "🦋",
-    "🦋",
-    "🦋"
-];
+const fireflyContainer =
+    document.getElementById("fireflies");
 
 
-for (let i = 0; i < 12; i++) {
+/* =====================================================
+   BUTTERFLIES
+===================================================== */
 
-    const butterfly =
-        document.createElement("div");
+if (butterflyContainer) {
 
-    butterfly.className =
-        "butterfly";
+    for (let i = 0; i < 12; i++) {
 
-    butterfly.textContent =
-        butterflySymbols[
-            Math.floor(
-                Math.random() *
-                butterflySymbols.length
-            )
-        ];
+        const butterfly =
+            document.createElement("div");
 
-    butterfly.style.left =
-        Math.random() * 100 + "%";
+        butterfly.className =
+            "butterfly";
 
-    butterfly.style.top =
-        (25 + Math.random() * 70) + "%";
+        butterfly.textContent =
+            "🦋";
 
-    butterfly.style.animationDelay =
-        Math.random() * 12 + "s";
+        butterfly.style.left =
+            Math.random() * 100 + "%";
 
-    butterfly.style.animationDuration =
-        (10 + Math.random() * 8) + "s";
+        butterfly.style.top =
+            (25 + Math.random() * 65) + "%";
 
-    butterflyContainer.appendChild(
-        butterfly
-    );
+        butterfly.style.animationDelay =
+            Math.random() * 12 + "s";
 
+        butterfly.style.animationDuration =
+            (10 + Math.random() * 8) + "s";
+
+        butterflyContainer.appendChild(
+            butterfly
+        );
+    }
 }
-
 
 
 /* =====================================================
    FALLING FLOWER PETALS
 ===================================================== */
 
-const petalContainer =
-    document.getElementById("petals");
+if (petalContainer) {
 
+    const petalSymbols = [
+        "✿",
+        "❀",
+        "·"
+    ];
 
-const petalSymbols = [
-    "✿",
-    "❀",
-    "·"
-];
+    for (let i = 0; i < 30; i++) {
 
+        const petal =
+            document.createElement("div");
 
-for (let i = 0; i < 30; i++) {
+        petal.className =
+            "petal";
 
-    const petal =
-        document.createElement("div");
+        petal.textContent =
+            petalSymbols[
+                Math.floor(
+                    Math.random() *
+                    petalSymbols.length
+                )
+            ];
 
-    petal.className =
-        "petal";
+        petal.style.left =
+            Math.random() * 100 + "%";
 
-    petal.textContent =
-        petalSymbols[
-            Math.floor(
-                Math.random() *
-                petalSymbols.length
-            )
-        ];
+        petal.style.animationDelay =
+            Math.random() * 10 + "s";
 
-    petal.style.left =
-        Math.random() * 100 + "%";
+        petal.style.animationDuration =
+            (7 + Math.random() * 7) + "s";
 
-    petal.style.animationDelay =
-        Math.random() * 10 + "s";
-
-    petal.style.animationDuration =
-        (7 + Math.random() * 7) + "s";
-
-    petalContainer.appendChild(
-        petal
-    );
-
+        petalContainer.appendChild(
+            petal
+        );
+    }
 }
-
 
 
 /* =====================================================
    FIREFLIES
 ===================================================== */
 
-const fireflyContainer =
-    document.getElementById("fireflies");
+if (fireflyContainer) {
+
+    for (let i = 0; i < 35; i++) {
+
+        const firefly =
+            document.createElement("div");
+
+        firefly.className =
+            "firefly";
+
+        firefly.style.left =
+            Math.random() * 100 + "%";
+
+        firefly.style.top =
+            (30 + Math.random() * 65) + "%";
+
+        firefly.style.animationDelay =
+            Math.random() * 6 + "s";
+
+        firefly.style.animationDuration =
+            (4 + Math.random() * 5) + "s";
+
+        fireflyContainer.appendChild(
+            firefly
+        );
+    }
+}
 
 
-for (let i = 0; i < 35; i++) {
+/* =====================================================
+   WELCOME SCREEN
+===================================================== */
 
-    const firefly =
-        document.createElement("div");
+const welcomeScreen =
+    document.getElementById("welcomeScreen");
 
-    firefly.className =
-        "firefly";
+const enterButton =
+    document.getElementById("enterButton");
 
-    firefly.style.left =
-        Math.random() * 100 + "%";
+const mainContent =
+    document.getElementById("mainContent");
 
-    firefly.style.top =
-        (30 + Math.random() * 65) + "%";
 
-    firefly.style.animationDelay =
-        Math.random() * 6 + "s";
+if (
+    enterButton &&
+    welcomeScreen &&
+    mainContent
+) {
 
-    firefly.style.animationDuration =
-        (4 + Math.random() * 5) + "s";
+    enterButton.addEventListener(
+        "click",
+        function () {
 
-    fireflyContainer.appendChild(
-        firefly
+            welcomeScreen.classList.add(
+                "hide"
+            );
+
+            mainContent.classList.add(
+                "show"
+            );
+
+        }
     );
 
 }
+
+
+/* =====================================================
+   BIRTHDAY MESSAGES
+===================================================== */
+
+const messages = {
+
+    library: {
+
+        label: "A LITTLE LETTER",
+
+        title: "From the Library 🌷",
+
+        message:
+            "Your friend's birthday message will appear here. 💗",
+
+        signature:
+            "— Your friend ♡"
+
+    },
+
+
+    cinema: {
+
+        label: "A TINY NOTE",
+
+        title: "From the Cinema 🌸",
+
+        message:
+            "Your friend's birthday message will appear here. 💗",
+
+        signature:
+            "— Your friend ♡"
+
+    },
+
+
+    post: {
+
+        label: "FROM FAR AWAY",
+
+        title: "A Message For You 🌺",
+
+        message:
+            "Your friend's birthday message will appear here. 💗",
+
+        signature:
+            "— Your friend ♡"
+
+    },
+
+
+    home: {
+
+        label: "ONE LAST THING",
+
+        title: "From Home 💌",
+
+        message:
+            "Your birthday message will appear here. 💗",
+
+        signature:
+            "— Your bestie ♡"
+
+    }
+
+};
+
+
+/* =====================================================
+   LETTER ELEMENTS
+===================================================== */
+
+const letters =
+    document.querySelectorAll(".letter");
+
+const letterOverlay =
+    document.getElementById("letterOverlay");
+
+const closeButton =
+    document.getElementById("closeButton");
+
+const paperLabel =
+    document.getElementById("paperLabel");
+
+const paperTitle =
+    document.getElementById("paperTitle");
+
+const paperMessage =
+    document.getElementById("paperMessage");
+
+const paperSignature =
+    document.getElementById("paperSignature");
+
+
+/* =====================================================
+   OPEN LETTER
+===================================================== */
+
+letters.forEach(
+    function (letter) {
+
+        letter.addEventListener(
+            "click",
+            function () {
+
+                const letterName =
+                    letter.dataset.letter;
+
+                const data =
+                    messages[letterName];
+
+                if (!data) {
+                    return;
+                }
+
+                paperLabel.textContent =
+                    data.label;
+
+                paperTitle.textContent =
+                    data.title;
+
+                paperMessage.textContent =
+                    data.message;
+
+                paperSignature.textContent =
+                    data.signature;
+
+                letterOverlay.classList.add(
+                    "show"
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   CLOSE LETTER
+===================================================== */
+
+if (closeButton) {
+
+    closeButton.addEventListener(
+        "click",
+        function () {
+
+            letterOverlay.classList.remove(
+                "show"
+            );
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   CLOSE WHEN CLICKING OUTSIDE
+===================================================== */
+
+if (letterOverlay) {
+
+    letterOverlay.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target ===
+                letterOverlay
+            ) {
+
+                letterOverlay.classList.remove(
+                    "show"
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   ESCAPE KEY
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            if (letterOverlay) {
+
+                letterOverlay.classList.remove(
+                    "show"
+                );
+
+            }
+
+        }
+
+    }
+);
