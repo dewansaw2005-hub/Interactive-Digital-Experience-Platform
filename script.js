@@ -220,7 +220,7 @@ const messages = {
         title: "පුංචි පවුල 💌",
 
         message:
-            "We might just be a bunch of texts, calls, and late-night voice notes… but we're still your family. 🫂💗\nලෝකේ කොහේ හිටියත්, ඔයාට අමාරුවක් ආවොත් හෝ සතුටක් ආවොත්, අපි ඔයා එක්ක ඉන්නවා — always. No matter the distance, no matter the time zones.\nYou're not just someone we talk to online. You're ours. පුංචි පවුලේ කෙනෙක්. ❤️\nSo today, and every day after — happy birthday, and welcome home. 🏡✨",
+            "We might just be a bunch of texts, calls, and late-night voice notes… but we're still your family. 🫂💗\nAlways. No matter the distance, no matter where you are.\nYou're not just someone we talk to online. You're ours ❤️\nSo today, and every day after — happy birthday, and welcome home. 🏡✨",
 
         signature:
             "~ your පුංචි පවුල, always here for you ♡"
