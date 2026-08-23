@@ -75,20 +75,32 @@ if (enterButton) {
 const messages = {
     library: {
         label: "A LITTLE LETTER",
-        title: "From the Library 🌷",
+        title: "From Maddu 🌷",
         message: "Your friend's birthday message will appear here. 💗",
         signature: "— Your friend ♡"
     },
     cinema: {
         label: "A TINY NOTE",
-        title: "From the Cinema 🌸",
+        title: "From Lithu 🌸",
         message: "Your friend's birthday message will appear here. 💗",
         signature: "— Your friend ♡"
     },
     post: {
         label: "FROM FAR AWAY",
-        title: "A Message For You 🌺",
-        message: "Your friend's birthday message will appear here. 💗",
+        title: "From Dewa Akki 🌺",
+        message: "සුබ හෙලුකුට්ටන් දිනයක් වේවා ලොකූ 🥳🥳🎊🎊🎉💕💕❤️✨
+
+පුංචි පෞලෙ වයසින් පොඩි, හැබැයි අනිත් ඒවගෙන් ලොකු එකීට දැන් 18 කුත් වෙලා 🥹🥹
+
+මගේ ජීවිතේ හම්බුනු වටිනම කෙනෙක් තමා ඔයා ලොකූ....ඔයා නිසා මන් ජීවිතේ මොන තරම් දේවල් වෙන්න පුලුවන්ද කියලා ඉගෙන ගත්තා, කෙනෙක් ව අහන් ඉන්න එක ඇත්තටම නරකම නෑ කියලා ඉගෙන ගත්තා, ඒ වගේම මට මගෙම නන්ගියෙක් හම්බුනා කියලා දැණුනා  🫂❤️‍🩹
+
+
+ඔයාගෙ මේ ලස්සන දවසෙන් පස්සෙ ඔයා තියන හැම පියවරක්ම, ගන්න හැම තීරණයක්ම වගේම හම්බෙන හැම කෙනෙක්ම හොද වෙන්න කියලා මන් මගෙ මුලු හදවතින්ම ප්‍රාර්ථනා කරනවා ❤️✨️
+
+ඔයා ඒ ගන්න හැම පියවරකදිම ඒකෙ හොද නරක තේරුම් කරලා දෙන්න, එකකුස නූපන් අක්කා කෙනෙක් ඉන්න වග අමතක කරන්නෙපා 🤗🫂❤️✨️
+
+
+ආයෙමත්, ඔයාට සුබම සුබ උපන්දිනයක් වේවා මගෙ නන්ගි! මන්, අපේ පුංචි පවුල, ඔයාට ආදරෙයි ❤️❤️❤️❤️",
         signature: "— Your friend ♡"
     },
     home: {
