@@ -1,0 +1,413 @@
+/* =====================================================
+   ENCHANTED FANTASY BACKGROUND
+===================================================== */
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    font-family:
+        "Poppins",
+        "Noto Sans Sinhala",
+        sans-serif;
+
+    color: white;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(106, 77, 160, 0.45),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(70, 105, 150, 0.25),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 65%,
+            rgba(150, 90, 150, 0.20),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            180deg,
+            #08051a 0%,
+            #151032 45%,
+            #09071d 100%
+        );
+
+}
+
+
+/* =====================================================
+   BACKGROUND LAYER
+===================================================== */
+
+.fantasy-bg {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   MOON
+===================================================== */
+
+.moon {
+
+    position: absolute;
+
+    width: 170px;
+
+    height: 170px;
+
+    top: 7%;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 30%,
+            #fffdf5,
+            #e9e3ff 55%,
+            #c8c0ef 100%
+        );
+
+    box-shadow:
+
+        0 0 30px
+        rgba(235,225,255,0.75),
+
+        0 0 80px
+        rgba(180,150,255,0.45),
+
+        0 0 150px
+        rgba(130,100,230,0.25);
+
+    opacity: 0.9;
+
+}
+
+
+/* moon halo */
+
+.moon-glow {
+
+    position: absolute;
+
+    inset: -55px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(190,170,255,0.20),
+            transparent 65%
+        );
+
+}
+
+
+/* =====================================================
+   STARS
+===================================================== */
+
+.star {
+
+    position: absolute;
+
+    width: 3px;
+
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    box-shadow:
+        0 0 8px white;
+
+    animation:
+        twinkle 3s infinite ease-in-out;
+
+}
+
+
+@keyframes twinkle {
+
+    0%,100% {
+
+        opacity: 0.2;
+
+        transform:
+            scale(0.7);
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.4);
+    }
+
+}
+
+
+/* =====================================================
+   FLOATING SPARKLES
+===================================================== */
+
+.sparkle {
+
+    position: absolute;
+
+    color: #fff3c7;
+
+    font-size: 15px;
+
+    opacity: 0;
+
+    animation:
+        floatSparkle
+        7s infinite ease-in-out;
+
+    text-shadow:
+        0 0 10px
+        rgba(255,240,180,0.8);
+
+}
+
+
+@keyframes floatSparkle {
+
+    0% {
+
+        transform:
+            translateY(40px)
+            scale(0.5);
+
+        opacity: 0;
+    }
+
+    25% {
+
+        opacity: 0.8;
+    }
+
+    70% {
+
+        opacity: 0.7;
+    }
+
+    100% {
+
+        transform:
+            translateY(-180px)
+            scale(1.2);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =====================================================
+   MIST
+===================================================== */
+
+.mist {
+
+    position: absolute;
+
+    width: 600px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(190,180,235,0.08),
+            transparent 70%
+        );
+
+    filter:
+        blur(20px);
+
+    animation:
+        drift 18s infinite ease-in-out alternate;
+
+}
+
+
+.mist-one {
+
+    left: -200px;
+
+    bottom: 15%;
+}
+
+
+.mist-two {
+
+    right: -250px;
+
+    bottom: 35%;
+
+    animation-delay:
+        -7s;
+}
+
+
+.mist-three {
+
+    left: 25%;
+
+    bottom: -50px;
+
+    animation-delay:
+        -12s;
+}
+
+
+@keyframes drift {
+
+    from {
+
+        transform:
+            translateX(-40px);
+    }
+
+    to {
+
+        transform:
+            translateX(80px);
+    }
+
+}
+
+
+/* =====================================================
+   FLOWERS
+===================================================== */
+
+.flowers {
+
+    position: absolute;
+
+    color:
+        rgba(242,190,255,0.45);
+
+    font-size: 32px;
+
+    letter-spacing: 12px;
+
+    filter:
+        drop-shadow(
+            0 0 12px
+            rgba(240,170,255,0.45)
+        );
+
+    opacity: 0.7;
+
+}
+
+
+.flowers-left {
+
+    left: 20px;
+
+    bottom: 90px;
+
+    transform:
+        rotate(-12deg);
+}
+
+
+.flowers-right {
+
+    right: 20px;
+
+    bottom: 130px;
+
+    transform:
+        rotate(10deg);
+}
+
+
+/* =====================================================
+   VINES
+===================================================== */
+
+.vine {
+
+    position: absolute;
+
+    font-size: 100px;
+
+    opacity: 0.25;
+
+    filter:
+        blur(0.3px);
+
+}
+
+
+.vine-left {
+
+    left: -30px;
+
+    top: 35%;
+
+    transform:
+        rotate(-35deg);
+}
+
+
+.vine-right {
+
+    right: -30px;
+
+    top: 45%;
+
+    transform:
+        rotate(35deg);
+}
+
+
+/* =====================================================
+   MAKE YOUR WEBSITE CONTENT SIT ABOVE BACKGROUND
+===================================================== */
+
+.page-content {
+
+    position: relative;
+
+    z-index: 5;
+
+}
