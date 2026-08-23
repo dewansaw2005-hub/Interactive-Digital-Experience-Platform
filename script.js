@@ -220,7 +220,12 @@ const messages = {
         title: "පුංචි පවුල 💌",
 
         message:
-            "Your birthday message will appear here. 💗",
+            "We might just be a bunch of texts, calls, and late-night voice notes… but we're still your family. 🫂💗
+Always. No matter the distance, no matter the time zones.
+You're not just someone we talk to online. You're ours.❤️
+So today, and every day after — happy birthday, and welcome home. 🏡✨
+
+~ your පුංචි පවුල, always here for you ♡",
 
         signature:
             "— Your bestie ♡"
