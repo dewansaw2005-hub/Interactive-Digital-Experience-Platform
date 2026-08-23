@@ -23,11 +23,9 @@ if (butterflyContainer) {
         const butterfly =
             document.createElement("div");
 
-        butterfly.className =
-            "butterfly";
+        butterfly.className = "butterfly";
 
-        butterfly.textContent =
-            "🦋";
+        butterfly.textContent = "🦋";
 
         butterfly.style.left =
             Math.random() * 100 + "%";
@@ -36,7 +34,7 @@ if (butterflyContainer) {
             (25 + Math.random() * 65) + "%";
 
         butterfly.style.animationDelay =
-            Math.random() * 12 + "s";
+            Math.random() * 10 + "s";
 
         butterfly.style.animationDuration =
             (10 + Math.random() * 8) + "s";
@@ -49,7 +47,7 @@ if (butterflyContainer) {
 
 
 /* =====================================================
-   FALLING FLOWER PETALS
+   FALLING PETALS
 ===================================================== */
 
 if (petalContainer) {
@@ -65,8 +63,7 @@ if (petalContainer) {
         const petal =
             document.createElement("div");
 
-        petal.className =
-            "petal";
+        petal.className = "petal";
 
         petal.textContent =
             petalSymbols[
@@ -103,8 +100,7 @@ if (fireflyContainer) {
         const firefly =
             document.createElement("div");
 
-        firefly.className =
-            "firefly";
+        firefly.className = "firefly";
 
         firefly.style.left =
             Math.random() * 100 + "%";
@@ -139,22 +135,25 @@ const mainContent =
     document.getElementById("mainContent");
 
 
-if (
-    enterButton &&
-    welcomeScreen &&
-    mainContent
-) {
+if (enterButton) {
 
     enterButton.addEventListener(
         "click",
         function () {
 
-            welcomeScreen.classList.add(
-                "hide"
-            );
+            if (welcomeScreen) {
+                welcomeScreen.classList.add("hide");
+            }
 
-            mainContent.classList.add(
-                "show"
+            setTimeout(
+                function () {
+
+                    if (mainContent) {
+                        mainContent.classList.add("show");
+                    }
+
+                },
+                500
             );
 
         }
@@ -169,56 +168,56 @@ if (
 
 const messages = {
 
-    library: {
+    maddu: {
 
         label: "A LITTLE LETTER",
 
-        title: "From the Library 🌷",
+        title: "Maddu 🌷",
 
         message:
-            "Your friend's birthday message will appear here. 💗",
+            "Happy birthday to one of the sweetest people I'm so grateful to have met!🥹💗\nI just want you to know that you truly matter, more than you probably realize. You're such a pretty, intelligent & incredibly strong person, and I genuinely appreciate having you in my life. I hope everything you're going through gets better and that life becomes kinder to you. No matter what happens, please remember that you're never alone. We're all here for you, for anything and everything. You've made it through so much already and I'm so proud of how strong you are. I hope you achieve everything you dream of and become successful in everything you choose to do. You deserve so many beautiful things in life. And until the day we finally get to meet in person, hang on, okay? One day we'll look back at all these online conversations and laugh about how long it took us to finally meet. I'm genuinely so grateful for you. Please keep going, keep smiling, and never forget how loved and appreciated you are. Again, Happy birthday Cacuu!!! Laviyooo mmmmmmmmwahhhh😚",
 
         signature:
-            "— Your friend ♡"
+            "~🎂💗✨🥂"
 
     },
 
 
-    cinema: {
+    lithu: {
 
         label: "A TINY NOTE",
 
-        title: "From the Cinema 🌸",
+        title: "Lithu 🌸",
 
         message:
-            "Your friend's birthday message will appear here. 💗",
+            "Happy Birthday, My Best Friend! 🎂🤍✨\nඅපි කවදාවත් ඇස් දෙකට දැකලා නැති වුණත්, මගේ ජීවිතේ මට හම්බවුණු හොඳම මිනිස්සු අතරින් ඔයාට තියෙන්නේ හරිම විශේෂ තැනක්. 🥹❤️ දුර කියන්නේ කිලෝමීටර් ගාණක් විතරයි කියලා මට හිතෙන්නේ ඔයා නිසා.\nමගේ සතුටේදී වගේම මගේ අමාරුම දවස්වලත් මාව අහගෙන, මට හිනා වෙන්න හේතුවක් වෙලා, මගේ හොඳම යාළුවා වෙලා හිටියට ගොඩක් ස්තූතියි. 🫂💗\nකවදාහරි දවසක අපි ඇත්තටම හම්බවෙලා, \"අපි මෙච්චර කාලයක් මෙහෙම යාළුවෙලා හිටියද?\" කියලා හිනා වෙන්න පුළුවන් වෙයි කියලා මම හිතනවා. 🥺🤍\nඔයාගේ ජීවිතේ හැම හීනයක්ම හැබෑ වෙන්න, හැමදාම සතුටින් ඉන්න, හිතට නිදහසක් තියෙන ලස්සන ජීවිතයක් ලැබෙන්න මම හදවතින්ම ප්‍රාර්ථනා කරනවා. 🎂✨\nHappy Birthday to the person I've never met, but somehow became one of the closest people to my heart. ❤️‍🩹🫶🏻\nදුර කොච්චර තිබුණත්… ඔයා මගේ හොඳම යාළුවා. 🤍♾️",
 
         signature:
-            "— Your friend ♡"
+            ""
 
     },
 
 
-    post: {
+    dewaakki: {
 
         label: "FROM FAR AWAY",
 
-        title: "A Message For You 🌺",
+        title: "Dewa Akki 🌺",
 
         message:
-            "Your friend's birthday message will appear here. 💗",
+            "සුබ හෙලුකුට්ටන් දිනයක් වේවා ලොකූ 🥳🥳🎊🎊🎉💕💕❤️✨\nපුංචි පෞලෙ වයසින් පොඩි, හැබැයි අනිත් ඒවගෙන් ලොකු එකීට දැන් 18 කුත් වෙලා 🥹🥹\nමගේ ජීවිතේ හම්බුනු වටිනම කෙනෙක් තමා ඔයා ලොකූ....ඔයා නිසා මන් ජීවිතේ මොන තරම් දේවල් වෙන්න පුලුවන්ද කියලා ඉගෙන ගත්තා, කෙනෙක් ව අහන් ඉන්න එක ඇත්තටම නරකම නෑ කියලා ඉගෙන ගත්තා, ඒ වගේම මට මගෙම නන්ගියෙක් හම්බුනා කියලා දැණුනා 🫂❤️‍🩹\nඔයාගෙ මේ ලස්සන දවසෙන් පස්සෙ ඔයා තියන හැම පියවරක්ම, ගන්න හැම තීරණයක්ම වගේම හම්බෙන හැම කෙනෙක්ම හොද වෙන්න කියලා මන් මගෙ මුලු හදවතින්ම ප්‍රාර්ථනා කරනවා ❤️✨️\nඔයා ඒ ගන්න හැම පියවරකදිම ඒකෙ හොද නරක තේරුම් කරලා දෙන්න, එකකුස නූපන් අක්කා කෙනෙක් ඉන්න වග අමතක කරන්නෙපා 🤗🫂❤️✨️\nආයෙමත්, ඔයාට සුබම සුබ උපන්දිනයක් වේවා මගෙ නන්ගි! මන්, අපේ පුංචි පවුල, ඔයාට ආදරෙයි ❤️❤️❤️❤️",
 
         signature:
-            "— Your friend ♡"
+            ""
 
     },
 
 
-    home: {
+    punchipawula: {
 
         label: "ONE LAST THING",
 
-        title: "From Home 💌",
+        title: "පුංචි පවුල 💌",
 
         message:
             "Your birthday message will appear here. 💗",
@@ -278,21 +277,25 @@ letters.forEach(
                     return;
                 }
 
-                paperLabel.textContent =
-                    data.label;
+                if (paperLabel) {
+                    paperLabel.textContent = data.label;
+                }
 
-                paperTitle.textContent =
-                    data.title;
+                if (paperTitle) {
+                    paperTitle.textContent = data.title;
+                }
 
-                paperMessage.textContent =
-                    data.message;
+                if (paperMessage) {
+                    paperMessage.textContent = data.message;
+                }
 
-                paperSignature.textContent =
-                    data.signature;
+                if (paperSignature) {
+                    paperSignature.textContent = data.signature;
+                }
 
-                letterOverlay.classList.add(
-                    "show"
-                );
+                if (letterOverlay) {
+                    letterOverlay.classList.add("show");
+                }
 
             }
         );
@@ -311,9 +314,9 @@ if (closeButton) {
         "click",
         function () {
 
-            letterOverlay.classList.remove(
-                "show"
-            );
+            if (letterOverlay) {
+                letterOverlay.classList.remove("show");
+            }
 
         }
     );
@@ -322,7 +325,7 @@ if (closeButton) {
 
 
 /* =====================================================
-   CLOSE WHEN CLICKING OUTSIDE
+   CLOSE WHEN CLICKING OUTSIDE LETTER
 ===================================================== */
 
 if (letterOverlay) {
